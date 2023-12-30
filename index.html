@@ -11,25 +11,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles2.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
     <div class="main-container">
         <header>
-            <img class="logo" src="/images/logo/Booki.png">
+            <div class="logo-reservia">
+                <img class="logo" src="/images/logo/Booki.png">
+            </div>
             <div class="menu">
-                    <nav>
-                        <ul>
-                            <li class="nav-one"><a href="#">Hebergements</a></li>
-                            <li class="nav-two"><a href="#">Activites</a></li>
-                        </ul>
-                    </nav>
-                <div class="logo-images">
-                    <img class="bar-one" src="/images/other/Bars left.jpg">
-                    <img class="bar-two" src="/images/other/Bars right.jpg">
-                </div>
+                <nav>
+                    <ul>
+                        <li class="nav-one"><a href="#">Hebergements</a></li>
+                        <li class="nav-two"><a href="#">Activites</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
         <main>
@@ -42,7 +40,10 @@
                 <form class="search-bar">
                     <img class="form-img" src="images/other/Group 15.jpg">
                     <input class="form-text" required type="text" name="areaName" placeholder="Marseille, France">
-                    <button class="form-btn"">🔍</button>
+                    <button class="form-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    
                 </form>
 
                 <div class="filter-bar">
@@ -52,7 +53,7 @@
                             <img class="filter-bar-img" src="images/other/Economique.jpg">
                             <h3 class="filter-bar-text">Economique</h3>
                         </div>
-                        <div class="filter">
+                        <div class="filter filter-two">
                             <img class="filter-bar-img" src="images/other/Familial.jpg">
                             <h3 class="filter-bar-text">Familial</h3>
                         </div>
@@ -84,7 +85,7 @@
                     <div class="populaires-cards">
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="./images/hebergements/Le soleil.jpg" alt="Image de la chambre d'hôtel ">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Le soleil du matin</h3>
@@ -103,7 +104,7 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="./images/hebergements/Au cœur de l’eau.jpg" alt="Image de la chambre d'hôtel">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
@@ -122,7 +123,7 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="./images/hebergements/Bleu et Blanc.jpg" alt="Image de la chambre d'hôtel">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Bleu et Blanc</h3>
@@ -148,7 +149,7 @@
                         <div class="hebergements-cards">
                             <a href="#">
                                 <article class="hebergements-card">
-                                    <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                    <img src="./images/hebergements/du port.jpg" alt="Image de la chambre d'hôtel">
                                     <div class="hebergements-card-content">
                                         <div class="hebergements-card-txt">
                                             <h3 class="hebergements-card-title">Hôtel du port</h3>
@@ -167,7 +168,7 @@
                             </a>
                             <a href="#">
                                 <article class="hebergements-card">
-                                    <img src="./images/hebergements/marcus-loke.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                    <img src="./images/hebergements/Auberge La Canebiere.jpg" alt="Image de la chambre d'hôtel">
                                     <div class="hebergements-card-content">
                                         <div class="hebergements-card-txt">
                                             <h3 class="hebergements-card-title">Auberge La Canebiere</h3>
@@ -186,7 +187,7 @@
                             </a>
                             <a href="#">
                                 <article class="hebergements-card">
-                                    <img src="./images/hebergements/reisetopia.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                    <img src="./images/hebergements/Les Miserables.jpg" alt="Image de la chambre d'hôtel">
                                     <div class="hebergements-card-content">
                                         <div class="hebergements-card-txt">
                                             <h3 class="hebergements-card-title">Hôtel Les Miserables</h3>
@@ -205,7 +206,7 @@
                             </a>
                             <a href="#">
                                 <article class="hebergements-card">
-                                    <img src="./images/hebergements/annie-spratt.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                    <img src="./images/hebergements/de la mer.jpg" alt="Image de la chambre d'hôtel">
                                     <div class="hebergements-card-content">
                                         <div class="hebergements-card-txt">
                                             <h3 class="hebergements-card-title">Hôtel de la mer</h3>
@@ -224,7 +225,7 @@
                             </a>
                             <a href="#">
                                 <article class="hebergements-card">
-                                    <img src="./images/hebergements/nicate-lee.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                    <img src="./images/hebergements/Auberge Le Panier.jpg" alt="Image de la chambre d'hôtel">
                                     <div class="hebergements-card-content">
                                         <div class="hebergements-card-txt">
                                             <h3 class="hebergements-card-title">Auberge Le Panier</h3>
@@ -243,7 +244,7 @@
                             </a>
                             <a href="#">
                                 <article class="hebergements-card">
-                                    <img src="./images/hebergements/febrian-zakaria.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                    <img src="./images/hebergements/Chez Amina.jpg" alt="Image de la chambre d'hôtel">
                                     <div class="hebergements-card-content">
                                         <div class="hebergements-card-txt">
                                             <h3 class="hebergements-card-title">Hôtel Chez Amina</h3>
@@ -273,7 +274,7 @@
                     <div class="activites-cards">
                         <a href="#">
                             <article class="activites-card">
-                                <img src="./images/activites/reno-laithienne.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="./images/activites/Vieux-Port.jpg" alt="Image de la Vieux-Port">
                                     <div class="activites-card-txt">
                                         <h3 class="activites-card-title">Vieux-Port</h3>
                                     </div>
@@ -281,7 +282,7 @@
                         </a>
                         <a href="#">
                             <article class="activites-card">
-                                <img src="./images/activites/paul-hermann.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="./images/activites/Fort de Pomegues.jpg" alt="Image de la Fort de Pomegues">
                                     <div class="activites-card-txt">
                                         <h3 class="activites-card-title">Fort de Pomegues</h3>
                                     </div>
@@ -289,7 +290,7 @@
                         </a>
                         <a href="#">
                             <article class="activites-card">
-                                <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="./images/activites/Parc national des Calanques.jpg" alt="Image de la Parc national des Calanques">
                                     <div class="activites-card-txt">
                                         <h3 class="activites-card-title">Parc national des Calanques</h3>
                                     </div>
@@ -297,7 +298,7 @@
                         </a>
                         <a href="#">
                             <article class="activites-card">
-                                <img src="./images/activites/florian-wehde.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="./images/activites/Notre-Dame-de-la-Garde.jpg" alt="Image de la Notre-Dame-de-la-Garde">
                                     <div class="activites-card-txt">
                                         <h3 class="activites-card-title">Notre-Dame-de-la-Garde</h3>
                                     </div>
@@ -307,18 +308,18 @@
                 </section>
         </main>
         <footer>
-            <div>
+            <div class="a-propos">
                 <h2 class="footer-title-one footer-title">A propos</h2>
                 <p class="footer-text">Fonctionnement du site</p>
                 <p class="footer-text">Conditions generales</p>
                 <p class="footer-text">Donnees et confidentialite</p>
             </div>
-            <div>
+            <div class="nos-hebergements">
                 <h2 class="footer-title-two footer-title">Nos hebergements</h2>
                 <p class="footer-text">Charte qualite</p>
                 <p class="footer-text">Proposer votre hotel</p>
             </div>
-            <div>
+            <div class="assistance">
                 <h2 class="footer-title-three footer-title">Assistance</h2>
                 <p class="footer-text">Centre d'aide</p>
                 <p class="footer-text">Nous contacter</p>
