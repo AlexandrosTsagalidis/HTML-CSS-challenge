@@ -19,9 +19,10 @@
 
 body {
     min-width: 23.4rem;
-    height: 7.19rem;
+    height: 253rem;
     margin: 0;
 }
+
 
     /*header starts */
 
@@ -52,7 +53,6 @@ header {
     min-width: 100%;
     height: 2.25rem;
     margin: 0;
-    
 }
 
 ul {
@@ -214,7 +214,7 @@ ul li {
     display: flex;
     flex-direction: row;
     height: 3.062rem;
-    border: 1px solid var(--Grey-Tint2);
+    border: 1px solid var(--Grey-Tint2); /* remove this to see the issue */
     border-radius: 0.937rem;
 }
 
@@ -240,7 +240,7 @@ ul li {
     width: 3.062rem;
     height: 3.062rem;
     padding: 0.94rem 1rem;
-    border: 1px solid var(--main-color);
+    border: 1px solid var(--Grey-Tint2);
     border-radius: 0.937rem;
     background: var(--main-color);
 }
@@ -327,7 +327,6 @@ ul li {
 .main-container {
     width: 100%;
     max-width: 768px;
-    text-align: ce;
 }
 
 a {
@@ -466,6 +465,8 @@ a {
     height: 1.312rem;
     margin: 0.94rem 0 0 0;
 }
+
+
     /* activites start here */
 
 
@@ -520,7 +521,6 @@ a {
 footer {
     display: flex;
     flex-direction: column;
-    
     min-width: 23.437rem;
     height: 28.812rem;
     gap: 3.12rem;
@@ -548,4 +548,514 @@ footer {
 .footer-text {
     height: 1.187rem;
     margin-top: 0.94rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:768px) {
+
+    body {
+        min-width: 48rem;
+        max-width: 64rem;
+        height: 123.063rem;
+        margin: 0;
+        padding: 0 3.12rem;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 1023px;
+    }
+
+
+    /* hearder starts */
+
+
+    header {
+        flex-direction: row;
+        min-width: 48rem;
+        max-width: 64rem;
+        height: 4.937rem;
+        gap: 32.41rem;
+        margin: 0;
+    }
+
+    .logo-reservia {
+        width: 100%;
+        height: 100%;
+        padding: 1.88rem 3.12rem 1.88rem 0;
+    }
+
+    .logo {
+        width: 3.818rem;
+        height: 1.187rem;
+    }
+
+    .menu {
+        min-width: 21.5rem;
+        height: 2.187rem;
+        margin-top: 0;
+        gap: 4.25rem;
+        border-top: 1px solid var(--main-color); /* can't figure out this bar */
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ul li {
+        list-style-type: none;
+        min-width: 7rem;
+    }
+
+    .nav-one {
+        width: 100%;
+        height: 1.187rem;
+        border-bottom: none;
+        border-top: 1px solid var(--main-color); /* can't figure out this bar */
+    }
+
+    .nav-two {
+        width: 100%;
+        height: 1.187rem;
+        border-bottom: none;
+    }
+
+
+    /* header ends */
+
+
+    /* info group starts*/
+
+    
+    .info-group {
+        height: 20.125rem;
+        margin: 1.88rem 0 2.19rem 0;
+        gap: 2.19rem;
+    }
+
+    .headline {
+        width: 100%;
+        height: 3.31rem;
+    }
+
+    .info-text-one {
+        font-size: 1.375rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 57.75rem;
+        height: 1.625rem;
+        margin: 0;
+    }
+
+    .info-text-two {
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 57.75rem;
+        height: 1.187rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+    }
+
+    .search-bar {
+        width: 100%;
+        height: 3.062rem;
+        border: none;
+        border-radius: 0.937rem;
+    }
+
+    .form-img {
+        width: 3.125rem;
+        height: 3.062rem;
+        border: 1px solid var(--Grey-Tint2);
+        border-top-left-radius: 0.937rem;
+        border-bottom-left-radius: 0.937rem;
+    }
+
+    .form-text {
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 0 1.5rem;
+        border-top: 1px solid var(--Grey-Tint2);
+        border-bottom: 1px solid var(--Grey-Tint2); /* something is fishy here */
+        border-right: none;
+        border-left: none;
+    }
+
+    .fa-magnifying-glass {
+        display: none;
+    }
+
+    .form-btn {
+        width: 8.25rem;
+        height: 3.062rem;
+        padding: 0.94rem 1rem;
+        border: 1px solid var(--Grey-Tint2);
+        border-radius: 0 0.937rem 0.937rem 0;
+        background: var(--main-color);
+        /* how do i change the search icon to text*/
+    }
+
+    .filter-bar {
+        width: 100%;
+        height: 5.687rem;
+    }
+
+    .filter-bar-title {
+        width: 3.375rem;
+        height: 1.312rem;
+        margin-top: 0;
+        margin-bottom: 1.25rem;
+    }
+
+    .filter-bar-all-filters {
+        display: flex;
+        gap: 0.94rem;
+    }
+
+    .filter-bar-first-and-second {
+        margin: 0;
+        gap: 0.94rem;
+    }
+
+    .filter-bar-third-and-forth {
+        gap: 0.94rem;
+    }
+
+    .filter {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 3.125rem;
+        border: 2px solid var(--Grey-Tint2);
+        border-radius: 1.562rem;
+        padding: 0 1.19rem;
+    }
+
+    .filter-one:hover,
+    .filter-two:hover,
+    .filter-three:hover,
+    .filter-four:hover {
+    background-color: lightblue;
+    }
+
+    .filter-bar-img {
+        width: 1.375rem;
+        height: 1.375rem;
+        margin-right: 0.62rem;
+    }
+
+    .filter-bar-text {
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 100%;
+        height: 1rem;
+    }
+
+    .infobar {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 1.5rem;
+        margin: 0;
+    }
+
+    .infobar-icon {
+        width: 1.5rem;
+        height: 100%;
+        margin-right: 0.62rem;
+    }
+
+    .infobar-text {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    
+
+    /* info group ends */ 
+
+
+    /* how do i make populaires go under hebergements? */
+
+
+    .populaires {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--main-bg-color);
+        margin-bottom: 2.19rem;
+        padding: 1.88rem;
+        width: 57.75rem;
+        height: 15.75rem;
+    }
+
+    .populaires-title {
+        width: 100%;
+        height: 1.625rem;
+        display: flex;
+        gap: 34.11rem;
+    }
+
+    .section-title {
+        font-size: 1.375rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 18.769rem;
+        height: 1.625rem;
+        margin: 0;
+    }
+
+    .fa-chart-line {
+        width: 1.125rem;
+        height: 0.984rem;
+    }
+
+    .populaires-cards  {
+        display: flex;
+        flex-direction: row;
+        gap: 1.25rem;
+        width: 100%;
+        margin-top: 1.25rem;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    .card {
+        display: flex;
+        width: 17.166rem;
+        height: 9.125rem;
+        margin: 0;
+        background-color: white;
+        border-radius: 20px;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    }
+
+    .card-title {
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .card-subtitle {
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .card img {
+        object-fit: cover;
+    }
+
+    .populaires-cards img {
+        width: 5.729rem;
+        height: 100%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+
+    /* hebergements start here */
+
+    .hebergements {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--main-bg-color);
+        width: 57.75rem;
+        height: 38.218rem;
+        padding: 1.88rem;
+        margin-bottom: 3.12rem;
+    }
+
+    .hebergements-section-title {
+        width: 54rem;
+        height: 1.625rem;
+        margin: 0 0 1.88rem 0;
+    }
+
+    .hebergements-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.88rem;
+        width: 57.75rem;
+        justify-content: center;
+    }
+
+    .hebergements-cards img {
+        object-fit: cover;
+        width: 100%;
+        height: 7.75rem;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .hebergements-card {
+        min-width: 16.75rem;
+        width: 100%;
+        height: 12.953rem;
+        margin: 0;
+        border: 3px solid #fff;
+        border-radius: 1.25rem;
+        box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+    }
+
+    .hebergements-end-text {
+        width: 54rem;
+        height: 1.312rem;
+        margin: 0;
+    }
+
+
+    /* activites start here */
+    
+
+    .activites {
+        display: flex;
+        flex-direction: column;
+        width: 57.75rem;
+        height: 24.376rem;
+        padding: 1.88rem;
+        margin-top: 2.19rem;
+        margin-bottom: 0;
+    }
+
+    .activites-section-title {
+        width: 54rem;
+        height: 1.876rem;
+        margin-top: 0;
+        margin-bottom: 1.88rem;
+    }
+
+    .activites-cards {
+        display: flex;
+        gap: 1.88rem;
+        width: 100%;
+        margin: 0;
+    }
+
+    .activites-card {
+        width: 12.093rem;
+        height: 16.875rem;
+        margin: 0;
+        border: 3px solid #fff;
+        border-radius: 1.25rem;
+        box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+    }
+
+
+    .activites-cards img {
+        object-fit: cover;
+        width: 100%;
+        height: 12.5rem;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .activites-card-title {
+        display: flex;
+        justify-content: left;
+        width: 12.093rem;
+        height: 4.375rem;
+    }
+
+    .activites-card-title-one,
+    .activites-card-title-two {
+        width: 100%;
+        height: 1.187rem;
+        white-space: nowrap;
+    }
+
+    .activites-card-title-three,
+    .activites-card-title-four {
+        width: 100%;
+        height: 2.375rem;
+        padding: 0.75rem 1.19rem;
+    }
+
+
+        /* footer starts here */
+
+
+        footer {
+            display: flex;
+            flex-direction: row;
+            width: 57.75rem;
+            height: 10.2rem;
+            gap: 1.88rem;
+            margin-top: 2.19rem;
+            padding: 0;
+            background: var(--main-bg-color);
+        }
+
+        .a-propos {
+            width: 18rem;
+            height: 10.187rem;
+            padding: 1.25rem;
+        }
+
+        .nos-hebergements {
+            width: 18rem;
+            height: 10.187rem;
+            padding: 1.25rem;
+        }
+
+        .assistance {
+            width: 18rem;
+            height: 10.187rem;
+            padding: 1.25rem;
+        }
+
+        .footer-title {
+            height: 1.312rem;
+            margin: 0;
+        }
+
+        .footer-text {
+            height: 1.187rem;
+            margin-top: 0.94rem;
+            margin-bottom: 0;
+        }
+
+
 }
