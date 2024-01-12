@@ -68,17 +68,21 @@ ul li {
 }
 
 .nav-one {
-    color: var(--Blue, #0065FC);
     width: 100%;
     height: 1.187rem;
-    border-bottom: 1px solid var(--main-color); /* i need to make space between border-bottom
-    and nav-one 0.94rem */
+    border-bottom: 1px solid var(--main-bg-color);
 }
 
 .nav-two {
     width: 100%;
     height: 1.187rem;
     border-bottom: 1px solid var(--main-bg-color);
+}
+
+.nav-one:hover,
+.nav-two:hover {
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
 }
 
 
@@ -143,7 +147,8 @@ ul li {
 .activites-section-title,
 .footer-title-one,
 .footer-title-two,
-.footer-title-three {
+.footer-title-three,
+.rechercher-btn {
     font-weight: 700;
 }
 
@@ -168,7 +173,8 @@ ul li {
 .footer-title-three,
 .footer-text,
 .nav-one,
-.nav-two {
+.nav-two,
+.rechercher-btn {
     font-style: normal;
     line-height: normal;
 }
@@ -198,7 +204,8 @@ ul li {
 .hebergements-end-text,
 .footer-title-one,
 .footer-title-two,
-.footer-title-three {
+.footer-title-three,
+.rechercher-btn {
     font-size: 1.125rem;
 }
 
@@ -213,23 +220,26 @@ ul li {
 .search-bar {
     display: flex;
     flex-direction: row;
+    border: 1px solid var(--main-bg-color);
     height: 3.062rem;
-    border: 1px solid var(--Grey-Tint2); /* remove this to see the issue */
     border-radius: 0.937rem;
 }
 
 .form-img {
     border: 1px solid var(--Grey-Tint2);
+    height: 3.062rem;
     border-top-left-radius: 0.937rem;
     border-bottom-left-radius: 0.937rem;
 }
 
 .form-text {
-    border-top: 1px solid var(--Grey-Tint2);
-    border-bottom: 1px solid var(--Grey-Tint2); /* something is fishy here */
     border-right: none;
     border-left: none;
-    text-align: center;
+    text-align: left;
+    height: 3.062rem;
+    padding: 0 1.5rem;
+    border-top: 1px solid var(--Grey-Tint2);
+    border-bottom: 1px solid var(--Grey-Tint2);
 } 
 
 .fa-magnifying-glass {
@@ -240,9 +250,14 @@ ul li {
     width: 3.062rem;
     height: 3.062rem;
     padding: 0.94rem 1rem;
-    border: 1px solid var(--Grey-Tint2);
-    border-radius: 0.937rem;
+    border: 1px solid var(--main-color);
+    border-top-right-radius: 0.937rem;
+    border-bottom-right-radius: 0.937rem;
     background: var(--main-color);
+}
+
+.rechercher-btn {
+    display: none;
 }
 
 
@@ -259,7 +274,6 @@ ul li {
 .filter-bar-first-and-second {
     display: flex;
     flex-direction: row;
-    text-align: center;
     gap: 0.625rem;
     margin: 1.25rem 0;
 }
@@ -290,8 +304,6 @@ ul li {
 }
 
 .filter-bar-img {
-    width: 1.375rem;
-    height: 1.375rem;
     margin-right: 0.62rem;
 }
 
@@ -432,7 +444,7 @@ a {
 }
 
 .hebergements-card {
-    width: 20.937rem;
+    width: 100%;
     height: 12.953rem;
     margin-top: 0.94rem;
     padding-bottom: 0.94rem;
@@ -498,7 +510,7 @@ a {
     width: 19.687rem;
     height: 12.5rem;
     margin-top: 0.94rem;
-    border: 3px solid #fff;
+    border: none;
     border-radius: 1.25rem;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
 }
@@ -584,7 +596,7 @@ footer {
 
 
 
-@media (min-width: 768px) {
+@media (min-width: 821px) {
 
     body {
         min-width: 48rem;
@@ -606,6 +618,7 @@ footer {
 
     header {
         flex-direction: row;
+        align-items: center;
         min-width: 48rem;
         max-width: 64rem;
         height: 4.937rem;
@@ -625,16 +638,18 @@ footer {
     }
 
     .menu {
+        display: flex;
+        align-items: center;
         min-width: 21.5rem;
         height: 2.187rem;
         margin-top: 0;
         padding: 0 3.12rem;
-        border-top: 1px solid var(--main-color); /* can't figure out this bar */
     }
 
     ul {
         display: flex;
         flex-direction: row;
+        margin-top: 0;
     }
 
     .ul li {
@@ -646,14 +661,23 @@ footer {
         width: 100%;
         height: 1.187rem;
         margin-right: 4.25rem;
+        padding: 1rem 0;
         border-bottom: none;
-        border-top: 1px solid var(--main-color); /* can't figure out this bar */
+        border-top: 1px solid var(--main-bg-color);
     }
 
     .nav-two {
         width: 100%;
         height: 1.187rem;
+        padding: 1rem 0;
         border-bottom: none;
+        border-top: 1px solid var(--main-bg-color);
+    }
+
+    .nav-one:hover,
+    .nav-two:hover {
+        border-bottom: none;
+        border-top: 1px solid var(--main-color);
     }
 
 
@@ -667,6 +691,7 @@ footer {
         height: 20.125rem;
         margin: 1.88rem 0 2.19rem 0;
         gap: 2.19rem;
+        align-items: start;
     }
 
     .headline {
@@ -696,9 +721,9 @@ footer {
     }
 
     .search-bar {
-        width: 100%;
+        width: 23.562rem;
         height: 3.062rem;
-        border: none;
+        border: 1px solid var(--main-bg-color);
         border-radius: 0.937rem;
     }
 
@@ -712,12 +737,11 @@ footer {
 
     .form-text {
         font-size: 1.125rem;
+        height: 3.062rem;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        margin: 0 1.5rem;
-        border-top: 1px solid var(--Grey-Tint2);
-        border-bottom: 1px solid var(--Grey-Tint2); /* something is fishy here */
+        padding: 0 1.5rem;
         border-right: none;
         border-left: none;
     }
@@ -733,7 +757,13 @@ footer {
         border: 1px solid var(--Grey-Tint2);
         border-radius: 0 0.937rem 0.937rem 0;
         background: var(--main-color);
-        /* how do i change the search icon to text*/
+    }
+
+    .rechercher-btn {
+        display: block;
+        color: var(--white-color);
+        width: 6.25rem;
+        height: 1.312rem;
     }
 
     .filter-bar {
@@ -779,18 +809,12 @@ footer {
     background-color: lightblue;
     }
 
-    .filter-bar-img {
-        width: 1.375rem;
-        height: 1.375rem;
-        margin-right: 0.62rem;
-    }
-
     .filter-bar-text {
         font-size: 1rem;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        width: 100%;
+        width: 6.062rem;
         height: 1rem;
     }
 
@@ -826,6 +850,7 @@ footer {
         display: flex;
         flex-direction: column;
         background-color: var(--main-bg-color);
+        border-radius: 0.9375rem;
         margin-bottom: 2.19rem;
         padding: 1.88rem;
         width: 57.75rem;
@@ -910,6 +935,7 @@ footer {
         display: flex;
         flex-direction: column;
         background-color: var(--main-bg-color);
+        border-radius: 0.9375rem;
         width: 57.75rem;
         height: 38.218rem;
         padding: 1.88rem;
@@ -987,7 +1013,7 @@ footer {
         width: 12.093rem;
         height: 16.875rem;
         margin: 0;
-        border: 3px solid #fff;
+        border: none;
         border-radius: 1.25rem;
         box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
     }
@@ -1149,6 +1175,7 @@ footer {
         height: 17.562rem;
         margin: 1.88rem 0 2.19rem 0;
         gap: 2.19rem;
+        align-items: start;
     }
 
     .headline {
@@ -1178,10 +1205,11 @@ footer {
     }
 
     .search-bar {
-        width: 100%;
+        width: 23.562rem;
         height: 3.062rem;
-        border: none;
+        border: 1px solid var(--main-bg-color);
         border-radius: 0.937rem;
+        
     }
 
     .form-img {
@@ -1197,9 +1225,6 @@ footer {
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        margin: 0 1.5rem;
-        border-top: 1px solid var(--Grey-Tint2);
-        border-bottom: 1px solid var(--Grey-Tint2); /* something is fishy here */
         border-right: none;
         border-left: none;
     }
@@ -1215,7 +1240,6 @@ footer {
         border: 1px solid var(--Grey-Tint2);
         border-radius: 0 0.937rem 0.937rem 0;
         background: var(--main-color);
-        /* how do i change the search icon to text*/
     }
 
     .filter-bar {
@@ -1263,12 +1287,6 @@ footer {
     .filter-three:hover,
     .filter-four:hover {
     background-color: lightblue;
-    }
-
-    .filter-bar-img {
-        width: 1.375rem;
-        height: 1.375rem;
-        margin-right: 0.62rem;
     }
 
     .filter-bar-text {
@@ -1456,8 +1474,7 @@ footer {
         width: 83.75rem;
         height: 34.938rem;
         padding: 1.88rem;
-        margin-top: 2.19rem;
-        margin-bottom: 0;
+        margin: 0;
     }
 
     .activites-section-title {
@@ -1477,7 +1494,7 @@ footer {
         width: 18.593rem;
         height: 23.75rem;
         margin: 0;
-        border: 3px solid #fff;
+        border: none;
         border-radius: 1.25rem;
         box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
     }
@@ -1557,6 +1574,10 @@ footer {
 
     .main-container {
         padding: 0 3.12rem;
+    }
+
+    .logo-reservia {
+        padding: 1.88rem 1.88rem 1.88rem 0;
     }
 
     .hebergements {
